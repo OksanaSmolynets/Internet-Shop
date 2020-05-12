@@ -19,13 +19,13 @@ export const addToCart = (items, product) => (dispath) => {
   });
 };
 
-export const removeFromCart = (items, product) => (dispath) => {
-  const cartItems = items.splice().filter((elm) => elm.id !== product.id);
+export const removeFromCart = (items, item) => (dispath) => {
+  const cartItems = items.slice().filter((elm) => elm.id !== item.id);
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
   return dispath({
     type: REMOVE_FROM_CART,
     payload: {
-      cartItems,
+      items: cartItems,
     },
   });
 };
