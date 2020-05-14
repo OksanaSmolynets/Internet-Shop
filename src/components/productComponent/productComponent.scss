@@ -1,0 +1,33 @@
+@import 'src/assets/colors.scss';
+
+.product-card.ant-card {
+  margin-bottom: 20px;
+  padding: 2px;
+
+  .ant-typography.ant-typography-ellipsis {
+    text-align: center;
+    a {
+      color: $btn-bg-gossamer;
+    }
+  }
+  .card-body-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ant-btn {
+    background: $btn-bg-gossamer;
+    color: $btn-text-color;
+    border: $btn-bg-gossamer;
+    &:hover {
+      background: $btn-bg-gossamer-hover;
+      border: $btn-border-white-hover;
+      color: $btn-text-color;
+    }
+    &:focus {
+      background: $btn-bg-gossamer-clicked;
+      color: $btn-text-color;
+      border: $btn-border-white-hover;
+    }
+  }
+}

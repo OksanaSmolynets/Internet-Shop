@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Products from './components/Products';
+import Products from './components/productComponent/Products';
 import Filter from './components/Filter';
 import Basket from './components/Basket';
 import { Provider } from 'react-redux';
